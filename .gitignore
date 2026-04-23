@@ -1,0 +1,14 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Large files
+*.csv
+*.pkl
+
+# Environment
+.env
+
+# OS files
+.DS_Store
+Thumbs.db

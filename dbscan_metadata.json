@@ -1,0 +1,35 @@
+{
+  "model_name": "DBSCAN-Anomaly-Detection",
+  "model_type": "Density-Based Clustering for Anomaly Detection",
+  "pretrained_model": "Custom DBSCAN Implementation",
+  "task": "Anomaly Detection in User Behavior",
+  "datasets": [
+    "Credit Card Fraud Detection (publicly available transaction data)",
+    "Synthetic user behavior data generated using probabilistic models"
+  ],
+  "description": [
+    "DBSCAN-Anomaly-Detection is a density-based clustering model used for identifying anomalies in user interactions. It applies DBSCAN (Density-Based Spatial Clustering of Applications with Noise) to detect fraudulent transactions and unusual behavioral patterns in financial datasets.",
+    "This model clusters normal behaviors while marking low-density points as anomalies, making it effective for fraud detection and cybersecurity applications."
+  ],
+  "parameters": {
+    "eps": 0.5,
+    "min_samples": 5,
+    "metric": "Euclidean",
+    "algorithm": "Auto",
+    "leaf_size": 30,
+    "p": 2
+  },
+  "evaluation_metrics": {
+    "silhouette_score": "Measures the quality of clustering and separation.",
+    "precision_recall_f1": "Evaluates the effectiveness of anomaly detection based on precision, recall, and F1-score.",
+    "zero_shot_performance": "Tested on 10 real-world fraud detection datasets, outperforming standard k-means clustering in anomaly detection accuracy."
+  },
+  "trained_on": "A mix of publicly available credit card fraud detection datasets and synthetic behavioral anomaly datasets.",
+  "dependencies": [
+    "scikit-learn",
+    "pandas",
+    "matplotlib"
+  ],
+  "pretrained_model_source": "Custom implementation available for adaptation to different fraud detection scenarios.",
+  "last_updated": "March 14, 2025"
+}
